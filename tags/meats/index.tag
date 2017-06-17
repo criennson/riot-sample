@@ -1,4 +1,4 @@
-<meat-index>
+<meat>
     <div class="row">
         <div class="col-md-2">
             <h2>Navigation</h2>
@@ -16,4 +16,4 @@
             </div>
         </div>
     </div>
-</meat-index>
+</meat>

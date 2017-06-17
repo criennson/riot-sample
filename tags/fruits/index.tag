@@ -1,4 +1,4 @@
-<fruit-index>
+<fruit>
     <div class="row">
         <div class="col-md-2">
             <div id="nav">
@@ -15,4 +15,4 @@
             </div>
         </div>
     </div>
-</fruit-index>
+</fruit>

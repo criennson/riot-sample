@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jspm": "jspm",
-    "start": "superstatic"
+    "start": "lite-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jspm": "^0.17.0-beta.29",
-    "superstatic": "^4.0.3"
+    "lite-server": "^2.3.0"
   },
   "jspm": {
     "name": "riot-routing-sample",
