@@ -12,9 +12,7 @@ import 'tags/fruits/index.tag!';
 import 'tags/fruits/detail.tag!';
 import 'tags/meats/index.tag!';
 
-
 import 'route.js';
-
 
 riot.mount('app');
 route.start(true);

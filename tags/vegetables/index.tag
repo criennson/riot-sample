@@ -16,7 +16,11 @@
         </div>
     </div>
     <script>
-        this.on('mount' , () => {
+		import route from 'riot-route';
+
+		var subRoute = route.create();
+
+		this.on('mount' , () => {
 			console.log('vegetable-index mount');
 
 			subRoute('vegetables/carrot', () => {
@@ -31,6 +35,8 @@
 				console.log('subRoute lettuce');
 				riot.mount('#page', 'lettuce', { name: "れたす" });
 			});
+
+			subRoute(route.current, null , true);
 		});
 
         this.on('unmount', () => {
