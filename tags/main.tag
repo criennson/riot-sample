@@ -1,10 +1,4 @@
-<app>
-    <div id="page-wrapper">
-        <div id="page"></div>
-    </div>
-    <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=618606468305902&ev=PageView&noscript=1"/>
-    </noscript>
+<main>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -15,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Riot Sample</a>
+                <a class="navbar-brand" href="#home">Riot Sample</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,4 +25,4 @@
     <div class="container-fluid">
         <div id="content"></div>
     </div>
-</app>
+</main>

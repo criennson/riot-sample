@@ -9,35 +9,50 @@ console.log('START');
 let subRoute = route.create();
 subRoute((...args) => {
 	console.log(args);
+	riot.mount('#page', 'main');
 });
 
-var vegetable = null;
-subRoute('vegetables', () => {
-	console.log('vegetable を mount します');
-	if(vegetable == null){
-		vegetable = riot.mount('#content', 'vegetable');
-	}
+subRoute('', () => {
+	route('home');
 });
-// subRoute('vegetables/carrot', () => {
-// 	 console.log('subRoute carrot');
-// 	 riot.mount('#page', 'carrot', { name: "にんじん" });
-// });
-// subRoute('vegetables/pumpkin', () => {
-// 	console.log('subRoute pumpkin');
-// 	 riot.mount('#page', 'pumpkin', { name: "かぼちゃ" });
-// });
-// subRoute('vegetables/lettuce', () => {
-// 	console.log('subRoute lettuce');
-// 	 riot.mount('#page', 'lettuce', { name: "れたす" });
-// });
+subRoute('home', () => {
+	console.log('route home');
+	riot.mount('#content', 'home');
+});
+
+subRoute('vegetables', () => {
+	console.log('route vegetables..');
+	riot.mount('#content', 'vegetable');
+});
+subRoute('vegetables/carrot', () => {
+	console.log('route carrot');
+	riot.mount('#container', 'carrot', {name: "にんじん"});
+});
+subRoute('vegetables/pumpkin', () => {
+	console.log('route pumpkin');
+	riot.mount('#container', 'pumpkin', {name: "かぼちゃ"});
+});
+subRoute('vegetables/lettuce', () => {
+	console.log('route lettuce');
+	riot.mount('#container', 'lettuce', {name: "れたす"});
+});
 
 subRoute('fruits', () => {
 	riot.mount('#content', 'fruit');
 });
-// subRoute('fruits/*', () => {
-// 	 riot.mount('#page', 'fruit-detail');
-// });
 
-subRoute('meats', () => {
+subRoute('meats..', () => {
 	riot.mount('#content', 'meat');
+});
+subRoute('meats/beef', () => {
+	console.log('route beef');
+	riot.mount('#container', 'beef', {name: "うし"});
+});
+subRoute('meats/pork', () => {
+	console.log('route pork');
+	riot.mount('#container', 'pork', {name: "ぶた"});
+});
+subRoute('meats/chicken', () => {
+	console.log('route chicken');
+	riot.mount('#container', 'chicken', {name: "とり"});
 });

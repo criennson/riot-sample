@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-md-10">
-            <div id="page">
+            <div id="container">
                 <h1>やさいいんでっくす</h1>
             </div>
         </div>
@@ -24,19 +24,19 @@
 			console.log('vegetable-index mount');
 
 			subRoute('vegetables/carrot', () => {
-				console.log('subRoute carrot');
-				riot.mount('#page', 'carrot', { name: "にんじん" });
+				console.log('vegetables carrot');
+				riot.mount('#container', 'carrot', { name: "にんじん" });
 			});
 			subRoute('vegetables/pumpkin', () => {
-				console.log('subRoute pumpkin');
-				riot.mount('#page', 'pumpkin', { name: "かぼちゃ" });
+				console.log('vegetables pumpkin');
+				riot.mount('#container', 'pumpkin', { name: "かぼちゃ" });
 			});
 			subRoute('vegetables/lettuce', () => {
-				console.log('subRoute lettuce');
-				riot.mount('#page', 'lettuce', { name: "れたす" });
+				console.log('vegetables lettuce');
+				riot.mount('#container', 'lettuce', { name: "れたす" });
 			});
 
-			subRoute(route.current, null , true);
+//			subRoute(route.current, null , true);
 		});
 
         this.on('unmount', () => {

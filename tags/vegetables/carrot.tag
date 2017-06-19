@@ -7,9 +7,9 @@
 	console.log('this.opts.name: ' + this.opts.name);
 
 	this.on('mount' , () => {
-		console.log(this.name + ' mount');
+		console.log('carrot mount');
 	});
 	this.on('unmount', () => {
-		console.log(this.name + ' unmount');
+		console.log('carrot unmount');
 	});
 </script>
