@@ -25,7 +25,10 @@
 
 			subRoute('meats/beef', () => {
 				console.log('meats beef');
-				riot.mount('#container', 'beef', { name: "うし" });
+				setTimeout( function() {
+					console.log('meats beef 2');
+					riot.mount('#container', 'beef', { name: "うし" });
+				}, 1500 );
 			});
 			subRoute('meats/pork', () => {
 				console.log('meats pork');

@@ -3,9 +3,6 @@ import route from 'riot-route';
 
 console.log('START');
 
-// let subRoute;
-// subRoute = route.create();
-
 let subRoute = route.create();
 subRoute((...args) => {
 	console.log(args);
@@ -38,11 +35,13 @@ subRoute('vegetables/lettuce', () => {
 });
 
 subRoute('fruits', () => {
+	console.log('route fruit');
 	riot.mount('#content', 'fruit');
 });
 
 subRoute('meats..', () => {
-	riot.mount('#content', 'meat');
+	console.log('route meat');
+		riot.mount('#content', 'meat');
 });
 subRoute('meats/beef', () => {
 	console.log('route beef');
